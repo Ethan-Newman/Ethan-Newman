@@ -9,6 +9,6 @@ class MainBot():
     api = auth_bot.Authenticate()                                        #Authenticates User
 
     follow_bot = FollowBot.FollowBot(api)                                #Init Follow Bot
-    follow_bot.FollowID('@j_aikens32', api)
+    follow_bot.FollowAll('@j_aikens32', api)
 
 
