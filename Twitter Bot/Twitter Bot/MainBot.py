@@ -1,6 +1,7 @@
 import tweepy
 import AuthBot
 import FollowBot
+import BlockBot
 
 class MainBot():
 
@@ -10,5 +11,8 @@ class MainBot():
 
     follow_bot = FollowBot.FollowBot(api)                                #Init Follow Bot
     follow_bot.FollowAll('@j_aikens32', api)
+
+    block_bot = BlockBot.BlockBot(api)
+    block_bot.Block('@Nux_Taku', api)
 
 
